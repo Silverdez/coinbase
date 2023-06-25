@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gray-900 text-white m-0 p-0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    @apply bg-gray-900;
+}
+
+table,
+.table-historical {
+    @apply table-auto border-collapse border border-gray-800 bg-gray-900
+}
+
+table thead,
+.table-historical thead {
+    @apply bg-gray-600 border border-gray-400
+}
+
+table thead tr th,
+.table-historical thead tr th {
+    @apply text-gray-300 text-center px-4 py-2 w-auto;
+    text-align: center !important;
+}
+
+table tbody,
+.table-historical tbody {
+    @apply border border-gray-800 px-4 py-2 text-gray-100 text-center
+}
+
+table tbody tr td,
+.table-historical tbody tr td {
+    @apply px-4 py-2 text-gray-500 text-center w-1/3
+}
+
+.table-historical tbody tr:nth-child(even) {
+    @apply bg-gray-800;
+}
+
+.table-historical tbody tr:nth-child(odd) {
+    @apply bg-gray-900;
+}
+
+.table-historical tbody tr:hover {
+    @apply bg-gray-700;
+}
+
+table tbody tr td svg,
+.table-historical tbody tr td svg {
+    @apply w-64 h-16
+}
+
+.sparkline {
+    @apply w-64 h-16 stroke-emerald-500 fill-none
+}
+.sparkred {
+    @apply w-64 h-16 stroke-red-500 fill-none
+}
+
+.dark-container {
+    @apply bg-gray-900 text-white m-0 p-0;
+}
